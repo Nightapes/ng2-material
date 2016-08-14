@@ -1,3 +1,225 @@
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/justindujardin/ng2-material/compare/v0.6.0...v0.6.1) (2016-08-07)
+
+
+### Bug Fixes
+
+* revert to @angular2-material alpha6 ([2a26bee](https://github.com/justindujardin/ng2-material/commit/2a26bee))
+
+
+
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/justindujardin/ng2-material/compare/v0.5.0...v0.6.0) (2016-08-07)
+
+
+### Features
+
+* update to angular2 rc4 ([65aa538](https://github.com/justindujardin/ng2-material/commit/65aa538))
+
+
+### BREAKING CHANGES
+
+* The automated builds will no longer execute tests against IE9 and IE10 browsers. IE11 will be tested.
+
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/justindujardin/ng2-material/compare/v0.4.1...v0.5.0) (2016-06-12)
+
+
+### Bug Fixes
+
+* import path in example page ([0cbec43](https://github.com/justindujardin/ng2-material/commit/0cbec43)), closes [#239](https://github.com/justindujardin/ng2-material/issues/239)
+* lock to material2 alpha 4 temporarily ([630b289](https://github.com/justindujardin/ng2-material/commit/630b289)), closes [#244](https://github.com/justindujardin/ng2-material/issues/244) [#240](https://github.com/justindujardin/ng2-material/issues/240)
+* **data-table:** unsubscribe from observables when destroyed ([ab3a326](https://github.com/justindujardin/ng2-material/commit/ab3a326))
+
+### Features
+
+* **build:** install typings as postinstall step ([772fab4](https://github.com/justindujardin/ng2-material/commit/772fab4))
+* Add Paging component ([a6061f6](https://github.com/justindujardin/ng2-material/commit/a6061f6))
+* **develop:** Add `npm tdd` and `grunt tdd` tasks ([1b6ba0c](https://github.com/justindujardin/ng2-material/commit/1b6ba0c))
+* **develop:** make npm scripts Windows friendly ([c5d63cd](https://github.com/justindujardin/ng2-material/commit/c5d63cd))
+* **examples:** add webpack example with ng2-material and material2 ([fe58d90](https://github.com/justindujardin/ng2-material/commit/fe58d90)), closes [#175](https://github.com/justindujardin/ng2-material/issues/175)
+
+
+
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/justindujardin/ng2-material/compare/v0.4.0...v0.4.1) (2016-05-22)
+
+
+### Bug Fixes
+
+* **Media:** zone aware query callbacks and sane reference counting ([b7385e1](https://github.com/justindujardin/ng2-material/commit/b7385e1))
+* **npm:** rewrite package source maps to point to the correct sources ([329dac2](https://github.com/justindujardin/ng2-material/commit/329dac2))
+
+### Features
+
+* **examples:** add jetbrains sponsor to index page ([03a5ff0](https://github.com/justindujardin/ng2-material/commit/03a5ff0))
+* **examples:** highlight code examples in component readme files ([4033074](https://github.com/justindujardin/ng2-material/commit/4033074))
+* **MdDialog:** add material2 overlay based dialog ([3a02410](https://github.com/justindujardin/ng2-material/commit/3a02410))
+
+
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/justindujardin/ng2-material/compare/v0.3.7...v0.3.8) (2016-05-04)
+
+
+
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/justindujardin/ng2-material/compare/v0.3.7...v0.3.8) (2016-05-04)
+
+
+
+
+<a name="0.3.7"></a>
+## [0.3.7](https://github.com/justindujardin/ng2-material/compare/v0.3.6...v0.3.7) (2016-04-24)
+
+
+### Bug Fixes
+
+* **input:** issue when typing rapidly into an input ([4386d56](https://github.com/justindujardin/ng2-material/commit/4386d56))
+
+
+
+<a name="0.3.6"></a>
+## [0.3.6](https://github.com/justindujardin/ng2-material/compare/v0.3.5...v0.3.6) (2016-04-17)
+
+
+### Bug Fixes
+
+* update messages when form validation status changes ([99df994](https://github.com/justindujardin/ng2-material/commit/99df994))
+
+### Features
+
+* make visibility input available for sidenav (#173) ([b735650](https://github.com/justindujardin/ng2-material/commit/b735650))
+* **JetBrains:** free OS licenses of WebStorm for major contributors ([195ee4c](https://github.com/justindujardin/ng2-material/commit/195ee4c))
+
+
+
+<a name="0.3.5"></a>
+## [0.3.5](https://github.com/justindujardin/ng2-material/compare/v0.3.4...v0.3.5) (2016-04-10)
+
+
+### Bug Fixes
+
+* fix ProgressCircular tests about diameter ([9c6ae37](https://github.com/justindujardin/ng2-material/commit/9c6ae37))
+* **universal:** workaround incomplete parse5 adapter ([0cf5608](https://github.com/justindujardin/ng2-material/commit/0cf5608))
+
+### Features
+
+* revamp interaction between table and rows. Now it only works with EventEmitter ([115ba65](https://github.com/justindujardin/ng2-material/commit/115ba65))
+* updated material icon font ([c313b2c](https://github.com/justindujardin/ng2-material/commit/c313b2c))
+* **angular2:** update to beta 14 ([7afdd23](https://github.com/justindujardin/ng2-material/commit/7afdd23))
+* **md-data-table:** Add data-table style hooks ([f1f3c68](https://github.com/justindujardin/ng2-material/commit/f1f3c68))
+* **universal:** export node and browser compatible services ([67e8054](https://github.com/justindujardin/ng2-material/commit/67e8054))
+
+
+### BREAKING CHANGES
+
+* universal: Remove static `Media.hasMedia` method and utility `rAF` function. Inject the `ViewportHelper` service for rAF, and the `Media` service for hasMedia. This static method referred to the window directly.
+
+The use of `MATERIAL_PROVIDERS` has been deprecated. Please use either `MATERIAL_NODE_PROVIDERS` or `MATERIAL_BROWSER_PROVIDERS` as is appropriate for your platform.
+
+
+
+<a name="0.3.4"></a>
+## [0.3.4](https://github.com/justindujardin/ng2-material/compare/v0.3.3...v0.3.4) (2016-03-29)
+
+
+### Bug Fixes
+
+* md-data-table injection on md-data-table-tr ([89d63f4](https://github.com/justindujardin/ng2-material/commit/89d63f4))
+
+
+
+<a name="0.3.3"></a>
+## [0.3.3](https://github.com/justindujardin/ng2-material/compare/v0.3.2...v0.3.3) (2016-03-28)
+
+
+
+
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/justindujardin/ng2-material/compare/v0.3.1...v0.3.2) (2016-03-27)
+
+
+
+
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/justindujardin/ng2-material/compare/v0.3.0...v0.3.1) (2016-03-27)
+
+
+### Bug Fixes
+
+* **angular2:** beta 12 has a change detection bug that misses peekaboo scroll ([5a58a05](https://github.com/justindujardin/ng2-material/commit/5a58a05))
+
+
+
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/justindujardin/ng2-material/compare/v0.2.13...v0.3.0) (2016-03-27)
+
+
+### Features
+
+* Data table component with selectable rows ([9e8f0ac](https://github.com/justindujardin/ng2-material/commit/9e8f0ac))
+* **angular2:** update to beta 12 ([887042e](https://github.com/justindujardin/ng2-material/commit/887042e))
+
+
+
+<a name="0.2.13"></a>
+## [0.2.13](https://github.com/justindujardin/ng2-material/compare/v0.2.12...v0.2.13) (2016-03-27)
+
+
+### Bug Fixes
+
+* package.json to run tests and serve the app ([799c8d1](https://github.com/justindujardin/ng2-material/commit/799c8d1))
+* rxjs-dependency version need to be frozen for the moment. When Angular team will ([53d3bf9](https://github.com/justindujardin/ng2-material/commit/53d3bf9))
+
+
+
+<a name="0.2.12"></a>
+## [0.2.12](https://github.com/justindujardin/ng2-material/compare/v0.2.11...v0.2.12) (2016-03-20)
+
+
+### Bug Fixes
+
+* **examples:** link to angular2 tag on index page ([98b642c](https://github.com/justindujardin/ng2-material/commit/98b642c))
+
+### Features
+
+* **angular2:** update to beta 11 ([603ba25](https://github.com/justindujardin/ng2-material/commit/603ba25))
+
+
+
+<a name="0.2.11"></a>
+## [0.2.11](https://github.com/justindujardin/ng2-material/compare/v0.2.10...v0.2.11) (2016-03-12)
+
+
+### Features
+
+* **angular2:** update to beta 9 ([5bee7d4](https://github.com/justindujardin/ng2-material/commit/5bee7d4))
+
+
+
+<a name="0.2.10"></a>
+## [0.2.10](https://github.com/justindujardin/ng2-material/compare/v0.2.9...v0.2.10) (2016-03-06)
+
+
+### Bug Fixes
+
+* **ink:** ink correctly radiates from under click on safari ([21e288f](https://github.com/justindujardin/ng2-material/commit/21e288f))
+
+
+
+<a name="0.2.9"></a>
+## [0.2.9](https://github.com/justindujardin/ng2-material/compare/v0.2.8...v0.2.9) (2016-03-05)
+
+
+### Features
+
+* **angular2:** update to beta 8 ([1d5c8e5](https://github.com/justindujardin/ng2-material/commit/1d5c8e5))
+
+
+
 <a name="0.2.8"></a>
 ## [0.2.8](https://github.com/justindujardin/ng2-material/compare/v0.2.7...v0.2.8) (2016-02-28)
 

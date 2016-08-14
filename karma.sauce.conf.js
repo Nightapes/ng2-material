@@ -16,10 +16,8 @@ module.exports = function (config) {
     ['chrome', '39'],
     ['chrome', '26'],
 
-    ['microsoftedge', '20.10240', 'Windows 10'],
+    ['microsoftedge', '13.10586', 'Windows 10'],
     ['internet explorer', '11', 'Windows 10'],
-    ['internet explorer', '10', 'Windows 8'],
-    ['internet explorer', '9', 'Windows 7'],
 
     ['android', '5.1'],
     ['android', '4.4']
@@ -50,7 +48,7 @@ module.exports = function (config) {
       recordVideo: false,
       recordScreenshots: false,
       options: {
-        'selenium-version': '2.47.1',
+        'selenium-version': '2.53.0',
         'command-timeout': 600,
         'idle-timeout': 600,
         'max-duration': 5400
