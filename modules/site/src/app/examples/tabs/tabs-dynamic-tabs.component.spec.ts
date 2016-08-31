@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {TabsDynamicTabsComponent} from './tabs-dynamic-tabs.component';
@@ -36,7 +36,7 @@ describe('Component: TabsDynamicTabs', () => {
   template: `
     <tabs-dynamic-tabs></tabs-dynamic-tabs>
   `,
-  directives: [TabsDynamicTabsComponent]
+  
 })
 class TabsDynamicTabsComponentTestController {
 }

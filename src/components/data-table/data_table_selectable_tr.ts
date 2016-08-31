@@ -1,7 +1,6 @@
 import {Component, Output, Input, EventEmitter, Inject, Optional, forwardRef, ElementRef, AfterContentInit} from "@angular/core";
 import 'rxjs/add/operator/share';
 import 'rxjs/add/operator/map';
-import {MdCheckbox} from "@angular2-material/checkbox";
 import {MdDataTable} from './data_table';
 
 /**
@@ -64,11 +63,9 @@ export abstract class AbstractMdDataTableSelectableRow implements AfterContentIn
   selector: 'tr[md-data-table-header-selectable-row]',
   template: `
         <th class="md-data-check-cell">
-            <md-checkbox [checked]="isActive"></md-checkbox>
         </th>
         <ng-content></ng-content>
     `,
-  directives: [MdCheckbox],
   host: {
     '[class.active]': 'isActive',
     '(click)': 'change($event)'
@@ -98,11 +95,9 @@ export class MdDataTableHeaderSelectableRow extends AbstractMdDataTableSelectabl
   selector: 'tr[md-data-table-selectable-row]',
   template: `
         <td class="md-data-check-cell">
-          <md-checkbox [checked]="isActive"></md-checkbox>
         </td>
         <ng-content></ng-content>
     `,
-  directives: [MdCheckbox],
   host: {
     '[class.active]': 'isActive',
     '(click)': 'change($event)'

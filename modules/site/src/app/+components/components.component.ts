@@ -1,6 +1,5 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {ActivatedRoute, ROUTER_DIRECTIVES} from '@angular/router';
-import {MATERIAL_DIRECTIVES} from 'ng2-material';
+import {ActivatedRoute} from '@angular/router';
 import {ComponentsService, IComponentMeta, NavigationService, ExampleComponent} from '../shared';
 import {HighlightComponent, HighlightContainerComponent} from '../shared/highlight/index';
 import {Subscription} from 'rxjs/Subscription';
@@ -10,11 +9,7 @@ import {Subscription} from 'rxjs/Subscription';
   moduleId: module.id,
   selector: 'docs-components',
   templateUrl: 'components.component.html',
-  styleUrls: ['components.component.css'],
-  directives: [
-    ExampleComponent, ROUTER_DIRECTIVES, MATERIAL_DIRECTIVES, HighlightComponent,
-    HighlightContainerComponent
-  ]
+  styleUrls: ['components.component.css']
 })
 export class ComponentsComponent implements OnInit, OnDestroy {
   public id: string;

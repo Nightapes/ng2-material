@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {CardActionButtonsComponent} from './card-action-buttons.component';
@@ -35,8 +35,7 @@ describe('Component: CardActionButtons', () => {
   selector: 'test',
   template: `
     <card-action-buttons></card-action-buttons>
-  `,
-  directives: [CardActionButtonsComponent]
+  `
 })
 class CardActionButtonsComponentTestController {
 }

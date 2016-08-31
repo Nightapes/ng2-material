@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {CardBasicUsageComponent} from './card-basic-usage.component';
@@ -35,8 +35,7 @@ describe('Component: CardBasicUsage', () => {
   selector: 'test',
   template: `
     <card-basic-usage></card-basic-usage>
-  `,
-  directives: [CardBasicUsageComponent]
+  `
 })
 class CardBasicUsageComponentTestController {
 }

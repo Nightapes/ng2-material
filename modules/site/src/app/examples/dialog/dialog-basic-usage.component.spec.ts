@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {DialogBasicUsageComponent} from './dialog-basic-usage.component';
@@ -36,7 +36,7 @@ describe('Component: DialogBasicUsage', () => {
   template: `
     <dialog-basic-usage></dialog-basic-usage>
   `,
-  directives: [DialogBasicUsageComponent]
+  
 })
 class DialogBasicUsageComponentTestController {
 }

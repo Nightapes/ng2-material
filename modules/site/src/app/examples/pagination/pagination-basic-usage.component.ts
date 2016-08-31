@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {MATERIAL_DIRECTIVES} from "ng2-material";
 
 import {tableDatas} from './pagination-datas';
 
@@ -7,7 +6,7 @@ import {tableDatas} from './pagination-datas';
   moduleId: module.id,
   selector: 'pagination-basic-usage',
   templateUrl: 'pagination-basic-usage.component.html',
-  directives: [MATERIAL_DIRECTIVES]
+  
 })
 export class PaginationBasicUsageComponent {
   materials: Array<any> = tableDatas;

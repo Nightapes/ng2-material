@@ -18,12 +18,16 @@ import {MdSubheaderModule} from './components/subheader/subheader.module'
 import {MdSwitchModule} from './components/switch/switch.module'
 import {PaginationService} from "./components/pagination/index";
 
+import { MdCoreModule } from '@angular2-material/core';
+import { MdCheckboxModule } from '@angular2-material/checkbox';
+
 import {Media} from "./core/util/media";
 import {ViewportHelper, BrowserViewportHelper, NodeViewportHelper} from "./core/util/viewport";
 
 
 
 const NGMATERIAL_MODULES = [
+    MdCoreModule, MdCheckboxModule,
     MdBackdropModule, MdButtonModule, MdButtonModule, MdCardModule, MdContentModule,
     MdTableModule, MdDialogModule, MdDividerModule, MdMessagesModule, MdValidatorsModule, MdIconModule, MdInkModule,
     MdListModule, MdPaginationModule, MdPeekabooModule, MdSubheaderModule, MdSwitchModule
@@ -32,6 +36,8 @@ const NGMATERIAL_MODULES = [
 
 @NgModule({
     imports: [
+        MdCoreModule,
+        MdCheckboxModule,
         MdBackdropModule,
         MdButtonModule,
         MdButtonModule,

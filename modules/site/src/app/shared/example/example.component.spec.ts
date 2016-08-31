@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {ExampleComponent} from './example.component';
@@ -35,7 +35,7 @@ describe('Component: Example', () => {
   template: `
     <docs-example></docs-example>
   `,
-  directives: [ExampleComponent]
+  
 })
 class ExampleComponentTestController {
 }

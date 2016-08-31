@@ -35,7 +35,6 @@ describe('Component: ButtonBasicUsage', () => {
   template: `
     <button-basic-usage></button-basic-usage>
   `,
-  directives: [ButtonBasicUsageComponent]
 })
 class ButtonBasicUsageComponentTestController {
 }

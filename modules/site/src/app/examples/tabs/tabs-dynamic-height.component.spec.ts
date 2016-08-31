@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {TabsDynamicHeightComponent} from './tabs-dynamic-height.component';
@@ -36,7 +36,7 @@ describe('Component: TabsDynamicHeight', () => {
   template: `
     <tabs-dynamic-height></tabs-dynamic-height>
   `,
-  directives: [TabsDynamicHeightComponent]
+  
 })
 class TabsDynamicHeightComponentTestController {
 }

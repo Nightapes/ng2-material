@@ -5,7 +5,7 @@ import {MdProgressCircle} from '@angular2-material/progress-circle';
   selector: 'progress-circle-basic-usage',
   templateUrl: 'progress-circle-basic-usage.component.html',
   styleUrls: ['progress-circle-basic-usage.component.css'],
-  directives: [MdProgressCircle]
+  
 })
 export class ProgressCircleBasicUsageComponent implements OnInit {
   public determinateValue: number = 30;

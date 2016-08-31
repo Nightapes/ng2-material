@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {DataTableSelectableRowsComponent} from './data-table-selectable-rows.component';
@@ -36,7 +36,7 @@ describe('Component: DataTableSelectableRows', () => {
   template: `
     <data-table-selectable-rows></data-table-selectable-rows>
   `,
-  directives: [DataTableSelectableRowsComponent]
+  
 })
 class DataTableSelectableRowsComponentTestController {
 }

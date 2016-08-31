@@ -15,7 +15,14 @@
     },
     "filesGlob": [
         "ng2-material.d.ts",
-        "src/**/*.ts"
+        "src/**/*.ts",
+         "!node_modules/**/*.ts"
+    ],
+    "exclude": [
+    "node_modules",
+    "dist",
+    "typings/browser.d.ts",
+    "typings/browser"
     ],
     "compileOnSave": true,
     "files": [

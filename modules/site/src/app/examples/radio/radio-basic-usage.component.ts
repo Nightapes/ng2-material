@@ -1,13 +1,11 @@
 import {Component} from '@angular/core';
 import {MdUniqueSelectionDispatcher} from '@angular2-material/core';
-import {MD_RADIO_DIRECTIVES} from '@angular2-material/radio';
 
 @Component({
   moduleId: module.id,
   selector: 'radio-basic-usage',
   templateUrl: 'radio-basic-usage.component.html',
   styleUrls: ['radio-basic-usage.component.css'],
-  directives: [MD_RADIO_DIRECTIVES],
   providers: [MdUniqueSelectionDispatcher]
 })
 export class RadioBasicUsageComponent {

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {MATERIAL_DIRECTIVES} from 'ng2-material';
+
 import {OVERLAY_PROVIDERS} from '@angular2-material/core/overlay/overlay';
 
 @Component({
@@ -7,7 +7,6 @@ import {OVERLAY_PROVIDERS} from '@angular2-material/core/overlay/overlay';
   selector: 'dialog-basic-usage',
   templateUrl: 'dialog-basic-usage.component.html',
   styleUrls: ['dialog-basic-usage.component.css'],
-  directives: [MATERIAL_DIRECTIVES],
   providers: [OVERLAY_PROVIDERS]
 })
 export class DialogBasicUsageComponent {

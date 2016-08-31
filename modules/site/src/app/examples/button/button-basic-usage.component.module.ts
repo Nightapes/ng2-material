@@ -4,14 +4,14 @@ import { APP_BASE_HREF } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 
-import { MdMaterialModule } from 'ng2-material';
+import { Ng2MaterialModule } from 'ng2-material/module';
 import { ButtonBasicUsageComponent } from './button-basic-usage.component';
 
 
 
 
 @NgModule({
-  imports: [MdMaterialModule],
+  imports: [Ng2MaterialModule],
   exports: [ButtonBasicUsageComponent],
   declarations: [ButtonBasicUsageComponent]
 

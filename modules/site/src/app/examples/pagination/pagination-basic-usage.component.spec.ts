@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
+import { ComponentFixture, TestComponentBuilder } from '@angular/core/testing';
 import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { PaginationBasicUsageComponent } from './pagination-basic-usage.component';
@@ -37,7 +37,7 @@ describe('Component: PaginationBasicUsage', () => {
   template: `
     <pagination-basic-usage></pagination-basic-usage>
   `,
-  directives: [PaginationBasicUsageComponent]
+  
 })
 class PaginationBasicUsageComponentTestController {
 }

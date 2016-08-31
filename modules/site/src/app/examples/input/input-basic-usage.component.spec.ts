@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {InputBasicUsageComponent} from './input-basic-usage.component';
@@ -36,7 +36,7 @@ describe('Component: InputBasicUsage', () => {
   template: `
     <input-basic-usage></input-basic-usage>
   `,
-  directives: [InputBasicUsageComponent]
+  
 })
 class InputBasicUsageComponentTestController {
 }

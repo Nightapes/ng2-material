@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {MATERIAL_DIRECTIVES} from 'ng2-material';
+
 
 let imagePath = 'images/avatars/avatar11.svg';
 
@@ -8,7 +8,7 @@ let imagePath = 'images/avatars/avatar11.svg';
   selector: 'list-basic-usage',
   templateUrl: 'list-basic-usage.component.html',
   styleUrls: ['list-basic-usage.component.css'],
-  directives: [MATERIAL_DIRECTIVES]
+  
 })
 export class ListBasicUsageComponent {
   phones = [

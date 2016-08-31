@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy, Input, ViewChild, AfterViewInit } from '@angular/core';
 import { Response, Http } from '@angular/http';
-import { ROUTER_DIRECTIVES, provideRouter, Router, RouterConfig } from '@angular/router';
-import { MD_SIDENAV_DIRECTIVES, MdSidenav } from '@angular2-material/sidenav';
+import { provideRouter, Router, RouterConfig } from '@angular/router';
+import { MdSidenav } from '@angular2-material/sidenav';
 import { MdToolbar } from '@angular2-material/toolbar';
 import { Media, MdIcon } from 'ng2-material';
 import { ComponentsOrderByPipe } from './site.pipe';

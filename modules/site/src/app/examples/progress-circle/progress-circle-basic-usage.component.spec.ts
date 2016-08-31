@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {ProgressCircleBasicUsageComponent} from './progress-circle-basic-usage.component';
@@ -37,7 +37,7 @@ describe('Component: ProgressCircleBasicUsage', () => {
   template: `
     <progress-circle-basic-usage></progress-circle-basic-usage>
   `,
-  directives: [ProgressCircleBasicUsageComponent]
+  
 })
 class ProgressCircleBasicUsageComponentTestController {
 }

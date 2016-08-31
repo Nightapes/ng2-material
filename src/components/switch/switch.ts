@@ -4,7 +4,6 @@ import {parseTabIndexAttribute} from "../../core/util/util";
 
 @Component({
   selector: 'md-switch',
-  inputs: ['checked', 'disabled'],
   host: {
     'role': 'checkbox'
   },
@@ -17,8 +16,7 @@ import {parseTabIndexAttribute} from "../../core/util/util";
     </div>
     <div class="md-switch-label">
       <ng-content></ng-content>
-    </div>`,
-  directives: []
+    </div>`
 })
 export class MdSwitch {
 

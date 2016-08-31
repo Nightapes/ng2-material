@@ -1,5 +1,5 @@
 import {Component, ViewEncapsulation, OnInit, OnDestroy} from '@angular/core';
-import {MATERIAL_DIRECTIVES, Media, MediaListener} from "ng2-material";
+import {Media, MediaListener} from "ng2-material";
 
 import {bookDatas} from './pagination-datas';
 
@@ -8,7 +8,6 @@ import {bookDatas} from './pagination-datas';
   selector: 'pagination-split-usage',
   templateUrl: 'pagination-split-usage.component.html',
   styleUrls: ['pagination-split-usage.component.css'],
-  directives: [MATERIAL_DIRECTIVES],
   encapsulation: ViewEncapsulation.None
 })
 export class PaginationSplitUsageComponent implements OnInit, OnDestroy {

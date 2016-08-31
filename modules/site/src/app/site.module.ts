@@ -4,7 +4,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 
-import { MdMaterialModule } from 'ng2-material';
+import { Ng2MaterialModule } from 'ng2-material/module';
 import { SiteAppComponent } from './site.component';
 import { MdCoreModule } from '@angular2-material/core';
 import { MdCheckboxModule } from '@angular2-material/checkbox';
@@ -19,7 +19,7 @@ import { MdToolbarModule } from '@angular2-material/toolbar';
 
 
 @NgModule({
-  imports: [MdMaterialModule, MdCoreModule, MdCheckboxModule, MdCheckboxModule, MdProgressBarModule, MdProgressCircleModule,
+  imports: [Ng2MaterialModule, MdCoreModule, MdCheckboxModule, MdProgressBarModule, MdProgressCircleModule,
             MdRadioModule, MdSidenavModule, MdTabsModule, MdToolbarModule, MdInputModule],
   declarations: [SiteAppComponent],
   providers: [{

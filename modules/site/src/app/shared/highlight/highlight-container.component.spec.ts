@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {HighlightContainerComponent} from './highlight-container.component.ts';
@@ -36,7 +36,7 @@ describe('Component: HighlightContainer', () => {
   template: `
     <docs-highlight-container></docs-highlight-container>
   `,
-  directives: [HighlightContainerComponent]
+  
 })
 class HighlightContainerComponentTestController {
 }

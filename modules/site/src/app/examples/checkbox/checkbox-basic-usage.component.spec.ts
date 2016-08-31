@@ -1,5 +1,5 @@
 import {addProviders, inject} from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
 import {CheckboxBasicUsageComponent} from './checkbox-basic-usage.component';
@@ -35,8 +35,8 @@ describe('Component: CheckboxBasicUsage', () => {
   selector: 'test',
   template: `
     <checkbox-basic-usage></checkbox-basic-usage>
-  `,
-  directives: [CheckboxBasicUsageComponent]
+  `
+  
 })
 class CheckboxBasicUsageComponentTestController {
 }

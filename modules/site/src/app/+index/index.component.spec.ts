@@ -1,4 +1,4 @@
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import {ComponentFixture, TestComponentBuilder} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {addProviders, inject} from '@angular/core/testing';
 import {By} from '@angular/platform-browser';
@@ -35,7 +35,6 @@ describe('Component: Index', () => {
   template: `
     <docs-index></docs-index>
   `,
-  directives: [IndexComponent]
 })
 class IndexComponentTestController {
 }
