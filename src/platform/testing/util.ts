@@ -1,13 +1,16 @@
 import {Component} from "@angular/core";
-import {beforeEach, describe, inject, it, async} from "@angular/core/testing";
 import {ComponentFixture, TestComponentBuilder} from "@angular/core/testing";
-import {MATERIAL_DIRECTIVES} from "../../index";
+import {Ng2MaterialModule} from "../../module";
+import {async, inject, TestBed} from '@angular/core/testing';
 
 export function promiseWait(milliseconds: number = 10): Promise<void> {
-  return new Promise<void>((resolve)=> {
+  return new Promise<void>((resolve) => {
     setTimeout(() => resolve(), milliseconds);
   });
 }
+
+
+
 
 /**
  * Run a basic lifecycle sanity check on a component. This will create the given component
@@ -19,17 +22,26 @@ export function promiseWait(milliseconds: number = 10): Promise<void> {
 export function componentSanityCheck(name: string, selector: string, template: string) {
   @Component({
     selector: 'test-app',
-    directives: [MATERIAL_DIRECTIVES],
     template: template
   })
   class TestComponent {
   }
 
   describe(name, () => {
-    let builder: TestComponentBuilder;
+
+    beforeEach(() => {
+      TestBed.configureTestingModule({
+        imports: [
+          Ng2MaterialModule
+        ]
+      });
+    });
+
 
     function setup(): Promise<any> {
-      return builder.createAsync(TestComponent)
+      return new Promise((resolve, reject) => {
+        resolve(TestBed.createComponent);
+      })
         .then((fixture: ComponentFixture<TestComponent>) => {
           fixture.detectChanges();
           return fixture;
@@ -37,9 +49,7 @@ export function componentSanityCheck(name: string, selector: string, template: s
         .catch(console.error.bind(console));
     }
 
-    beforeEach(inject([TestComponentBuilder], (tcb) => {
-      builder = tcb;
-    }));
+
 
     describe(selector, () => {
       it('should instantiate component without fail', async(inject([], () => {

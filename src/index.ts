@@ -27,8 +27,6 @@ import {MdSwitch} from "./components/switch/switch";
 import {MdSubheader} from "./components/subheader/subheader";
 import {Media} from "./core/util/media";
 import {ViewportHelper, BrowserViewportHelper, NodeViewportHelper} from "./core/util/viewport";
-import {OVERLAY_CONTAINER_TOKEN} from "@angular2-material/core/overlay/overlay";
-import {createOverlayContainer} from "@angular2-material/core/overlay/overlay-container";
 import {MdBackdrop} from "./components/backdrop/backdrop";
 
 export * from './components/button/button';
@@ -64,10 +62,17 @@ export * from './core/util/ink';
 export * from './core/util/viewport';
 export * from './core/util/animate';
 
+
+
+
+import {NgModule, ModuleWithProviders} from '@angular/core';
+import {CommonModule} from '@angular/common';
+
+
 /**
  * Collection of Material Design component directives.
  */
-export const MATERIAL_DIRECTIVES: any[] = [
+const MATERIAL_DIRECTIVES: any[] = [
   MdAnchor, MdButton,
   MdContent,
   MdDataTable, MdDataTableHeaderSelectableRow, MdDataTableSelectableRow,
@@ -87,6 +92,7 @@ export const MATERIAL_DIRECTIVES: any[] = [
   MdSwitch
 ];
 
+
 /**
  * Material Design component providers for use in a Node.JS environment.
  */
@@ -97,21 +103,4 @@ export const MATERIAL_NODE_PROVIDERS: any[] = [
   ...INPUT_VALIDATORS
 ];
 
-/**
- * Material Design component providers for use in the browser.
- */
-export const MATERIAL_BROWSER_PROVIDERS: any[] = [
-  ...MATERIAL_NODE_PROVIDERS,
-  {provide: ViewportHelper, useClass: BrowserViewportHelper},
-  // TODO(jd): should this be here? Or in the example app bootstrap?
-  {provide: OVERLAY_CONTAINER_TOKEN, useValue: createOverlayContainer()},
-];
 
-
-/**
- * Please use {@see MATERIAL_NODE_PROVIDERS} or {@see MATERIAL_BROWSER_PROVIDERS}
- * as appropriate.
- *
- * @deprecated
- */
-export const MATERIAL_PROVIDERS = MATERIAL_BROWSER_PROVIDERS;

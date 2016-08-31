@@ -105,5 +105,5 @@ import {Directive} from "@angular/core";
  * </hljs>
  */
 @Directive({selector: 'md-card'})
-export class MdContent {
+export class MdCard {
 }

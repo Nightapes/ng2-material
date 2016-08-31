@@ -1,5 +1,5 @@
 import {inject} from '@angular/core/testing';
-import {MATERIAL_DIRECTIVES} from '../../index';
+import {Ng2MaterialModule} from '../../module';
 import {Component} from '@angular/core';
 import {TestComponentBuilder, ComponentFixture} from '@angular/core/testing';
 import {Ink} from './ink';
@@ -11,7 +11,7 @@ export function main() {
 
   @Component({
     selector: 'ink-test-component',
-    directives: [MATERIAL_DIRECTIVES],
+    directives: [Ng2MaterialModule],
     template: defaultTemplate
   })
   class TestComponent {

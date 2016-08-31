@@ -54,7 +54,7 @@ module.exports = function (config) {
       // Vendor packages might include spec files. We don't want to use those.
       'node_modules/**/*.spec.js'
     ],
-    reporters: ['mocha', 'coverage'],
+    reporters: ['mocha', 'coverage', 'kjhtml'],
     port: 9876,
     autoWatch: true,
     background: true,

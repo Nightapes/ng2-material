@@ -3,17 +3,11 @@ import { Response, Http } from '@angular/http';
 import { ROUTER_DIRECTIVES, provideRouter, Router, RouterConfig } from '@angular/router';
 import { MD_SIDENAV_DIRECTIVES, MdSidenav } from '@angular2-material/sidenav';
 import { MdToolbar } from '@angular2-material/toolbar';
-import { MATERIAL_DIRECTIVES, Media, MdIcon } from 'ng2-material';
-import { ComponentsComponent } from './+components';
-import { IndexComponent } from './+index';
-import { ComponentsService, IComponentMeta } from './shared/components.service';
-import { FooterComponent } from './shared/footer/footer.component';
-import { NavigationService } from './shared/navigation.service';
+import { Media, MdIcon } from 'ng2-material';
 import { ComponentsOrderByPipe } from './site.pipe';
-
+import {ButtonBasicUsageComponent} from './examples/button/button-basic-usage.component'
 export const routes: RouterConfig = [
-  {path: '', component: IndexComponent},
-  {path: 'components/:id', component: ComponentsComponent}
+  { path: '', component: ButtonBasicUsageComponent },
 ];
 
 export const AppRouterProviders = [
@@ -26,14 +20,10 @@ export const AppRouterProviders = [
   selector: 'site-app',
   templateUrl: 'site.component.html',
   styleUrls: ['site.component.css'],
-  pipes: [ComponentsOrderByPipe],
-  directives: [
-    ROUTER_DIRECTIVES, MATERIAL_DIRECTIVES, MD_SIDENAV_DIRECTIVES, MdIcon, MdToolbar,
-    FooterComponent
-  ]
+  pipes: [ComponentsOrderByPipe]
 })
 export class SiteAppComponent implements OnInit,
-    OnDestroy, AfterViewInit {
+  OnDestroy, AfterViewInit {
   static SIDE_MENU_BREAKPOINT: string = 'gt-md';
 
   @ViewChild(MdSidenav) private menu: MdSidenav;
@@ -47,16 +37,12 @@ export class SiteAppComponent implements OnInit,
   angularVersion: string = null;
   linkTag: string = null;
 
-  components: IComponentMeta[] = [];
-
   private _subscription = null;
 
   constructor(
-      private http: Http,
-      private router: Router,
-      private navigation: NavigationService,
-      private media: Media,
-      private _components: ComponentsService) {}
+    private http: Http,
+    private router: Router,
+    private media: Media) { }
 
   ngAfterViewInit(): any {
     let query = Media.getQuery(SiteAppComponent.SIDE_MENU_BREAKPOINT);
@@ -120,14 +106,9 @@ export class SiteAppComponent implements OnInit,
       this.angularVersion = json['@angular/core'];
       this.linkTag = this.angularVersion.replace(/[>=^~]/g, '');
     });
-    this._components.getComponents().then((comps) => {
-      this.components = comps;
-      let title = 'Angular2 Material';
-      document.title = title;
-      this.navigation.currentTitle = title;
-      this.navigation.prevLink = this.navigation.componentLink(comps[comps.length - 1]);
-      this.navigation.nextLink = this.navigation.componentLink(comps[0]);
-    });
+    let title = 'Angular2 Material';
+    document.title = title;
+
   }
 
 

@@ -15,7 +15,6 @@ export function main() {
   }
   @Component({
     selector: 'test-app',
-    directives: [CORE_DIRECTIVES, MdDataTable, MdDataTableHeaderSelectableRow, MdDataTableSelectableRow],
     template: `<md-data-table [selectable]="true">
       <thead>
         <tr md-data-table-header-selectable-row>
